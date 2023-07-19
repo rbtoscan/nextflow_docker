@@ -1,3 +1,4 @@
+#!/usr/bin/env Rscript
 library(TCGAbiolinks)
 library(dplyr)
 library(DT)
