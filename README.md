@@ -3,15 +3,25 @@
 
 ## Installation and how to run
 
-Everything can be found in the github repository.
+Before moving forward, make sure you have both docker and nextflow installed in your machine. 
+```bash
+# check for docker version
+docker -v
+Docker version 24.0.2, build cb74dfc
 
-First, clone the repository:
+# check for nextflow version
+nextflow -v
+nextflow version 23.04.2.5870
+```
+
+Then, clone the repository:
 ```bash
 git clone git@github.com:rbtoscan/nextflow_docker.git
 ```
 
-After cloning the repository, please run the [install.sh](http://install.sh) script. It will create the necessary docker images so that they can be used in the script. It will also attempt to copy one external R script to the /usr/local/bin folder. This might not work for all filesystems, so please copy this file to an appropriate /bin folder so that nextflow can find it later. 
+After cloning, cd into the repository folder and run the [install.sh](http://install.sh) script. It will create the necessary docker images so that they can be used in the script. It will also attempt to copy one external R script to the /usr/local/bin folder. This might not work for all filesystems, so please copy this file to an appropriate /bin folder so that nextflow can find it later. 
 ```bash
+cd nextflow_docker/
 bash install.sh
 ```
 
