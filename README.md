@@ -75,5 +75,3 @@ You may also edit the ryvu_nextflow.nf script at the top and replace the param.r
 ./nextflow run ryvu_nextflow.nf 
 ```
 
-
-## Results
